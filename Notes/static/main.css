@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    
+}
+.main-container{
+    color: white;
+    margin: 40px 280px;
+    background-color: #222222;
+    opacity: 0.95;
+    padding: 40px;
+    padding-top: 30px;
+    border-radius: 8px;
+}
+.note-container{
+    color: white;
+    margin: 40px 280px;
+    background-color: #222222;
+    opacity: 0.95;
+    padding: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.icon{
+    font-size: 25px;
+    outline: none;
+    background-color: white;
+    border: none;
+    border-left: 2px solid black;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    color: #222222;
+}

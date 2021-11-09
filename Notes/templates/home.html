@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="main-container">
+    <form action="" method='POST'>
+        <textarea class="fs-5 font-weight-bold form-control" id="note" name="note" rows="3"></textarea>
+        <div align="center" class="mt-4">
+            <button class="fs-4 btn btn-primary" type="submit">Add Note</button>
+        </div>
+    </form>
+</div>
+{% if current_user.notes %}
+<div class="note-container mt-5">
+    <ul class="list-group list-group-flush">
+        {% for note in current_user.notes %}
+            <li class="list-group-item my-2 overflow-wrap">
+                {{note.data}}
+                <button class="icon" onClick="deletenote({{note.id}})">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+            </li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endif %}
+
+
+{% endblock body %}
